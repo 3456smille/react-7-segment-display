@@ -39,8 +39,8 @@ const Segment = ({ active, color, size, id, skew }: SegmentType) => {
     } as React.CSSProperties;
 
     return (
-        <div style={outerStyle}>
-            <div style={innerStyle}></div>
+        <div className="outer-style" style={outerStyle}>
+            <div className="inner-style" style={innerStyle}></div>
         </div>
     );
 };

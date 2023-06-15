@@ -26,8 +26,8 @@ const Segment = ({ active, color, size, id, skew }) => {
         height: `${size}px`,
         width: `${size * 5}px`,
     };
-    return (React.createElement("div", { style: outerStyle },
-        React.createElement("div", { style: innerStyle })));
+    return (React.createElement("div", { className: "outer-style", style: outerStyle },
+        React.createElement("div", { className: "inner-style", style: innerStyle })));
 };
 export default Segment;
 //# sourceMappingURL=Segment.js.map
