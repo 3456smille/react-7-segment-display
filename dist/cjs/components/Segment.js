@@ -32,7 +32,7 @@ const Segment = ({ active, color, size, id, skew }) => {
         width: `${size * 5}px`,
     };
     return (react_1.default.createElement("div", { className: "outer-style", style: outerStyle },
-        react_1.default.createElement("div", { className: "inner-style", style: innerStyle })));
+        react_1.default.createElement("div", { className: active ? "inner-style" : "inner-style inactive", style: innerStyle })));
 };
 exports.default = Segment;
 //# sourceMappingURL=Segment.js.map
