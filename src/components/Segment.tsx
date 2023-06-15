@@ -40,7 +40,7 @@ const Segment = ({ active, color, size, id, skew }: SegmentType) => {
 
     return (
         <div className="outer-style" style={outerStyle}>
-            <div className="inner-style" style={innerStyle}></div>
+            <div className={active ? "inner-style" : "inner-style inactive"} style={innerStyle}></div>
         </div>
     );
 };
